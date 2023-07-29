@@ -1,0 +1,70 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        "no-unused-vars": ["error", { "args": "none"}],
+        "no-console": ["warn", {"allow": ["log"]}],
+        "newline-before-return": "error",
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-unsafe-negation": "error",
+        "array-callback-return": "error",
+        "block-scoped-var": "error",
+        "curly": ["error", "all"],
+        "default-case": "error",
+        "eqeqeq": ["error", "always"],
+        "no-empty-function": "error",
+        "no-eq-null": "error",
+        "no-implicit-coercion": "error",
+        "no-lone-blocks": "error",
+        "no-loop-func": "error",
+        "no-multi-spaces": ["error", { "exceptions": { "Property": true,  "VariableDeclarator": true } }],
+        "no-param-reassign": "error",
+        "no-return-assign": "error",
+        "no-self-compare": "error",
+        "no-throw-literal": "error",
+        "no-sequences": "error",
+        "no-unused-expressions": "error",
+        "no-useless-concat": "error",
+        "wrap-iife": ["error", "outside"],
+        "yoda": ["error", "always"],
+        "init-declarations": ["error", "always"],
+        "no-undef": "error",
+        "no-undef-init": "error",
+        "no-use-before-define": ["error", {"functions": false, "classes": false}],
+        "no-path-concat": "error",
+        "array-bracket-spacing": ["error", "never"],
+        "block-spacing": "error",
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "computed-property-spacing": ["error", "never"],
+        "eol-last": ["error", "never"],
+        "func-name-matching": ["error", "always"],
+        "keyword-spacing": "error",
+        "max-depth": ["error", 7],
+        "max-lines": ["error", {"max": 1000}],
+        "max-params": ["warn", 6],
+        "no-multiple-empty-lines": "error",
+        "no-nested-ternary": "error",
+        "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+        "no-whitespace-before-property": "error",
+        "one-var": ["error", "never"],
+        "space-before-function-paren": "warn",
+        "no-var": "error",
+        "no-return-await": "error",
+        "prefer-const": ["warn", {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+        }]
+    }
+}
